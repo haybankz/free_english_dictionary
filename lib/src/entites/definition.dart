@@ -21,4 +21,22 @@ class Definition {
     data['example'] = example;
     return data;
   }
+
+  @override
+  String toString() {
+    return 'Definition{\ndefinition: $definition, \nsynonyms: $synonyms, \nantonyms: $antonyms, \nexample: $example\n}';
+  }
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is Definition &&
+          runtimeType == other.runtimeType &&
+          definition == other.definition &&
+          synonyms == other.synonyms &&
+          antonyms == other.antonyms &&
+          example == other.example;
+
+  @override
+  int get hashCode => definition.hashCode ^ synonyms.hashCode ^ antonyms.hashCode ^ example.hashCode;
 }

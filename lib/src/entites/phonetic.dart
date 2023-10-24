@@ -25,4 +25,22 @@ class Phonetic {
     }
     return data;
   }
+
+  @override
+  String toString() {
+    return 'Phonetic{\ntext: $text, \naudio: $audio, \nsourceUrl: $sourceUrl, \nlicense: $license}';
+  }
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is Phonetic &&
+          runtimeType == other.runtimeType &&
+          text == other.text &&
+          audio == other.audio &&
+          sourceUrl == other.sourceUrl &&
+          license == other.license;
+
+  @override
+  int get hashCode => text.hashCode ^ audio.hashCode ^ sourceUrl.hashCode ^ license.hashCode;
 }

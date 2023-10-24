@@ -30,4 +30,22 @@ class Meaning {
     data['antonyms'] = antonyms;
     return data;
   }
+
+  @override
+  String toString() {
+    return 'Meaning{\npartOfSpeech: $partOfSpeech, \ndefinitions: $definitions, \nsynonyms: $synonyms, \nantonyms: $antonyms\n}';
+  }
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is Meaning &&
+          runtimeType == other.runtimeType &&
+          partOfSpeech == other.partOfSpeech &&
+          definitions == other.definitions &&
+          synonyms == other.synonyms &&
+          antonyms == other.antonyms;
+
+  @override
+  int get hashCode => partOfSpeech.hashCode ^ definitions.hashCode ^ synonyms.hashCode ^ antonyms.hashCode;
 }

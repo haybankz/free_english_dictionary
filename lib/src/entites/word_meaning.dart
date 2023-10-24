@@ -47,4 +47,30 @@ class WordMeaning {
     data['sourceUrls'] = sourceUrls;
     return data;
   }
+
+  @override
+  String toString() {
+    return 'WordMeaning{\nword: $word, \nphonetic: $phonetic, \nphonetics: $phonetics, \nmeanings: $meanings, \nlicense: $license, \nsourceUrls: $sourceUrls\n}';
+  }
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is WordMeaning &&
+          runtimeType == other.runtimeType &&
+          word == other.word &&
+          phonetic == other.phonetic &&
+          phonetics == other.phonetics &&
+          meanings == other.meanings &&
+          license == other.license &&
+          sourceUrls == other.sourceUrls;
+
+  @override
+  int get hashCode =>
+      word.hashCode ^
+      phonetic.hashCode ^
+      phonetics.hashCode ^
+      meanings.hashCode ^
+      license.hashCode ^
+      sourceUrls.hashCode;
 }
