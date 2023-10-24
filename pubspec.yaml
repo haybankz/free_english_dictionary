@@ -1,7 +1,8 @@
 name: free_dictionary
 description: A starting point for Dart libraries or applications.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+homepage: https://github.com/haybankz/free_dictionary/blob/main/README.md
+repository: https://github.com/haybankz/free_dictionary
 
 environment:
   sdk: '>=2.19.0 <3.0.0'
