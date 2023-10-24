@@ -35,7 +35,7 @@ class FreeDictionaryService {
       final response = await _dio.get("/api/v2/entries/en/$word");
       if (response.statusCode == HttpStatus.ok) {
         for (final meaning in response.data) {
-          meaningList.add(meaning);
+          meaningList.add(WordMeaning.fromJson(meaning));
         }
       } else {
         throw Exception(response.statusMessage);

@@ -1,6 +1,6 @@
 import 'package:free_dictionary/free_dictionary.dart';
 
-void main() {
-  var awesome = FreeDictionary();
+void main() async {
+  var awesome = FreeDictionary.getWordMeaning(word: "stairs");
   print('awesome: $awesome');
 }
