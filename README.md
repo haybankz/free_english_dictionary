@@ -6,7 +6,7 @@ Check out
 ## Getting Started
 
 ```bash
-git clone git@github.com:haybankz/free_dictionary.git && cd free_dictionary
+git clone https://github.com/haybankz/free_dictionary.git && cd free_dictionary
 ```
 
 ```bash
