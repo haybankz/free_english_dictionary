@@ -1,4 +1,4 @@
-import 'package:free_dictionary/src/entites/definition.dart';
+import 'package:free_dictionary/src/entities/definition.dart';
 
 class Meaning {
   String? partOfSpeech;

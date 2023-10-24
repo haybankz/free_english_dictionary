@@ -1,4 +1,4 @@
-import 'package:free_dictionary/src/entites/license.dart';
+import 'package:free_dictionary/src/entities/license.dart';
 
 class Phonetic {
   String? text;

@@ -1,6 +1,6 @@
-import 'package:free_dictionary/src/entites/license.dart';
-import 'package:free_dictionary/src/entites/meaning.dart';
-import 'package:free_dictionary/src/entites/phonetic.dart';
+import 'package:free_dictionary/src/entities/license.dart';
+import 'package:free_dictionary/src/entities/meaning.dart';
+import 'package:free_dictionary/src/entities/phonetic.dart';
 
 class WordMeaning {
   String? word;
