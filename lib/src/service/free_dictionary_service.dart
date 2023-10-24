@@ -5,7 +5,7 @@ import 'package:dio_cache_interceptor/dio_cache_interceptor.dart';
 import 'package:free_dictionary/src/entites/entities.dart';
 
 class FreeDictionaryService {
-  final Dio _dio = Dio(
+  static final Dio _dio = Dio(
     BaseOptions(
         baseUrl: 'https://api.dictionaryapi.dev',
         contentType: 'application/json',
@@ -26,7 +26,7 @@ class FreeDictionaryService {
     return _instance!;
   }
 
-  Future<List<WordMeaning>> getWordMeaning(String word) async {
+  static Future<List<WordMeaning>> getWordMeaning(String word) async {
     final meaningList = <WordMeaning>[];
     if (word.isEmpty) {
       return meaningList;
