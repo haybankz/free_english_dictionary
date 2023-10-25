@@ -5,18 +5,22 @@ Check out
 
 ## Getting Started
 
+With Dart
 ```bash
-git clone https://github.com/haybankz/free_dictionary.git && cd free_dictionary
+dart pub add free_dictionary
+dart pub get
 ```
 
+With Flutter
 ```bash
+flutter pub add free_dictionary
 flutter pub get
 ```
 
 
 ## How to use
 
-See [example](example/free_dictionary_example.dart) for more usecase information.
+See [example](https://github.com/haybankz/free_dictionary/blob/main/example/free_dictionary_example.dart) for more usecase information.
 
 ```dart
 void main() async {

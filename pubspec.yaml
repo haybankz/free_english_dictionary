@@ -1,6 +1,6 @@
 name: free_dictionary
-description: Free Dictionary API Wrapper in Dart.
-version: 1.0.0
+description: Dart package that provides English dictionary meaning for word.
+version: 1.0.1
 homepage: https://github.com/haybankz/free_dictionary/blob/main/README.md
 repository: https://github.com/haybankz/free_dictionary
 

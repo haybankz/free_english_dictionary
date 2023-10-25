@@ -7,7 +7,8 @@ class FreeDictionary {
   /// returns Future of empty list if empty string is provided as word
   /// returns Future of list of word meaning if it exists
   /// throws exceptions in case of network or server issues
-  static Future<List<WordMeaning>> getWordMeaning({required String word}) async {
+  static Future<List<WordMeaning>> getWordMeaning(
+      {required String word}) async {
     return FreeDictionaryService.getWordMeaning(word);
   }
 }

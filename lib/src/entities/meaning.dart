@@ -47,5 +47,9 @@ class Meaning {
           antonyms == other.antonyms;
 
   @override
-  int get hashCode => partOfSpeech.hashCode ^ definitions.hashCode ^ synonyms.hashCode ^ antonyms.hashCode;
+  int get hashCode =>
+      partOfSpeech.hashCode ^
+      definitions.hashCode ^
+      synonyms.hashCode ^
+      antonyms.hashCode;
 }

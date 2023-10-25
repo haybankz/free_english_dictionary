@@ -12,7 +12,8 @@ class Phonetic {
     text = json['text'];
     audio = json['audio'];
     sourceUrl = json['sourceUrl'];
-    license = json['license'] != null ? License.fromJson(json['license']) : null;
+    license =
+        json['license'] != null ? License.fromJson(json['license']) : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -42,5 +43,6 @@ class Phonetic {
           license == other.license;
 
   @override
-  int get hashCode => text.hashCode ^ audio.hashCode ^ sourceUrl.hashCode ^ license.hashCode;
+  int get hashCode =>
+      text.hashCode ^ audio.hashCode ^ sourceUrl.hashCode ^ license.hashCode;
 }
