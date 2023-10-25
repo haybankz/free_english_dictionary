@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:dio_cache_interceptor/dio_cache_interceptor.dart';
-import 'package:free_dictionary/src/entities/entities.dart';
+import 'package:free_english_dictionary/src/entities/entities.dart';
 
 class FreeDictionaryService {
   static final Dio _dio = Dio(

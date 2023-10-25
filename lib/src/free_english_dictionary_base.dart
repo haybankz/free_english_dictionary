@@ -1,4 +1,4 @@
-import 'package:free_dictionary/free_dictionary.dart';
+import 'package:free_english_dictionary/free_english_dictionary.dart';
 
 /// Wrapper class for public facing functions
 class FreeDictionary {
@@ -7,8 +7,7 @@ class FreeDictionary {
   /// returns Future of empty list if empty string is provided as word
   /// returns Future of list of word meaning if it exists
   /// throws exceptions in case of network or server issues
-  static Future<List<WordMeaning>> getWordMeaning(
-      {required String word}) async {
+  static Future<List<WordMeaning>> getWordMeaning({required String word}) async {
     return FreeDictionaryService.getWordMeaning(word);
   }
 }

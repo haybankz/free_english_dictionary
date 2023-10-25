@@ -1,4 +1,4 @@
-import 'package:free_dictionary/src/entities/definition.dart';
+import 'package:free_english_dictionary/src/entities/definition.dart';
 
 class Meaning {
   String? partOfSpeech;
@@ -47,9 +47,5 @@ class Meaning {
           antonyms == other.antonyms;
 
   @override
-  int get hashCode =>
-      partOfSpeech.hashCode ^
-      definitions.hashCode ^
-      synonyms.hashCode ^
-      antonyms.hashCode;
+  int get hashCode => partOfSpeech.hashCode ^ definitions.hashCode ^ synonyms.hashCode ^ antonyms.hashCode;
 }

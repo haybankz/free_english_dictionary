@@ -1,6 +1,6 @@
-import 'package:free_dictionary/src/entities/license.dart';
-import 'package:free_dictionary/src/entities/meaning.dart';
-import 'package:free_dictionary/src/entities/phonetic.dart';
+import 'package:free_english_dictionary/src/entities/license.dart';
+import 'package:free_english_dictionary/src/entities/meaning.dart';
+import 'package:free_english_dictionary/src/entities/phonetic.dart';
 
 class WordMeaning {
   String? word;
@@ -10,13 +10,7 @@ class WordMeaning {
   License? license;
   List<String>? sourceUrls;
 
-  WordMeaning(
-      {this.word,
-      this.phonetic,
-      this.phonetics,
-      this.meanings,
-      this.license,
-      this.sourceUrls});
+  WordMeaning({this.word, this.phonetic, this.phonetics, this.meanings, this.license, this.sourceUrls});
 
   WordMeaning.fromJson(Map<String, dynamic> json) {
     word = json['word'];
@@ -33,8 +27,7 @@ class WordMeaning {
         meanings!.add(Meaning.fromJson(v));
       });
     }
-    license =
-        json['license'] != null ? License.fromJson(json['license']) : null;
+    license = json['license'] != null ? License.fromJson(json['license']) : null;
     sourceUrls = json['sourceUrls'].cast<String>();
   }
 

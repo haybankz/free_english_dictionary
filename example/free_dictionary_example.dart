@@ -1,4 +1,4 @@
-import 'package:free_dictionary/free_dictionary.dart';
+import 'package:free_english_dictionary/free_english_dictionary.dart';
 
 void main() async {
   // get word meaning

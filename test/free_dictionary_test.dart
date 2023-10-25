@@ -1,4 +1,4 @@
-import 'package:free_dictionary/free_dictionary.dart';
+import 'package:free_english_dictionary/free_english_dictionary.dart';
 import 'package:test/test.dart';
 
 void main() {
