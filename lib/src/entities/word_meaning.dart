@@ -11,7 +11,13 @@ class WordMeaning {
   License? license;
   List<String>? sourceUrls;
 
-  WordMeaning({this.word, this.phonetic, this.phonetics, this.meanings, this.license, this.sourceUrls});
+  WordMeaning(
+      {this.word,
+      this.phonetic,
+      this.phonetics,
+      this.meanings,
+      this.license,
+      this.sourceUrls});
 
   /// method to parse json to [WordMeaning] object.
   WordMeaning.fromJson(Map<String, dynamic> json) {
@@ -29,7 +35,8 @@ class WordMeaning {
         meanings!.add(Meaning.fromJson(v));
       });
     }
-    license = json['license'] != null ? License.fromJson(json['license']) : null;
+    license =
+        json['license'] != null ? License.fromJson(json['license']) : null;
     sourceUrls = json['sourceUrls'].cast<String>();
   }
 

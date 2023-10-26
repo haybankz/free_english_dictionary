@@ -20,7 +20,7 @@ flutter pub get
 
 ## How to use
 
-See [example](https://github.com/haybankz/free_english_dictionary/blob/main/example/free_dictionary_example.dartda) for more usecase information.
+See [example](https://github.com/haybankz/free_english_dictionary/blob/main/example/example.dartda) for more usecase information.
 
 ```dart
 void main() async {

@@ -41,5 +41,9 @@ class Definition {
           example == other.example;
 
   @override
-  int get hashCode => definition.hashCode ^ synonyms.hashCode ^ antonyms.hashCode ^ example.hashCode;
+  int get hashCode =>
+      definition.hashCode ^
+      synonyms.hashCode ^
+      antonyms.hashCode ^
+      example.hashCode;
 }

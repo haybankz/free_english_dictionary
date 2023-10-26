@@ -29,7 +29,10 @@ class License {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is License && runtimeType == other.runtimeType && name == other.name && url == other.url;
+      other is License &&
+          runtimeType == other.runtimeType &&
+          name == other.name &&
+          url == other.url;
 
   /// method for getting [hashCode]
   @override
