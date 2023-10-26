@@ -1,3 +1,4 @@
+/// Definition class that holds [definition], [synonyms], [antonyms] and [example].
 class Definition {
   String? definition;
   List<String>? synonyms;
@@ -6,6 +7,7 @@ class Definition {
 
   Definition({this.definition, this.synonyms, this.antonyms, this.example});
 
+  /// method to parse json to [Definition] object.
   Definition.fromJson(Map<String, dynamic> json) {
     definition = json['definition'];
     synonyms = json['synonyms'].cast<String>();
@@ -13,6 +15,7 @@ class Definition {
     example = json['example'];
   }
 
+  /// method to convert [Definition] object to Map.
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['definition'] = definition;
@@ -38,9 +41,5 @@ class Definition {
           example == other.example;
 
   @override
-  int get hashCode =>
-      definition.hashCode ^
-      synonyms.hashCode ^
-      antonyms.hashCode ^
-      example.hashCode;
+  int get hashCode => definition.hashCode ^ synonyms.hashCode ^ antonyms.hashCode ^ example.hashCode;
 }

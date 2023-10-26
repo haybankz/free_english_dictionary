@@ -2,6 +2,7 @@ import 'package:free_english_dictionary/src/entities/license.dart';
 import 'package:free_english_dictionary/src/entities/meaning.dart';
 import 'package:free_english_dictionary/src/entities/phonetic.dart';
 
+/// class for holding [word], [phonetic], [phonetics], [meanings], [license] and [sourceUrls]
 class WordMeaning {
   String? word;
   String? phonetic;
@@ -12,6 +13,7 @@ class WordMeaning {
 
   WordMeaning({this.word, this.phonetic, this.phonetics, this.meanings, this.license, this.sourceUrls});
 
+  /// method to parse json to [WordMeaning] object.
   WordMeaning.fromJson(Map<String, dynamic> json) {
     word = json['word'];
     phonetic = json['phonetic'];
@@ -31,6 +33,7 @@ class WordMeaning {
     sourceUrls = json['sourceUrls'].cast<String>();
   }
 
+  /// method to convert [WordMeaning] object to Map.
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['word'] = word;
@@ -48,11 +51,13 @@ class WordMeaning {
     return data;
   }
 
+  /// method for converting [WordMeaning] object to string
   @override
   String toString() {
     return 'WordMeaning{\nword: $word, \nphonetic: $phonetic, \nphonetics: $phonetics, \nmeanings: $meanings, \nlicense: $license, \nsourceUrls: $sourceUrls\n}';
   }
 
+  /// method for [==] operator
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -65,6 +70,7 @@ class WordMeaning {
           license == other.license &&
           sourceUrls == other.sourceUrls;
 
+  /// method for getting [hashCode]
   @override
   int get hashCode =>
       word.hashCode ^

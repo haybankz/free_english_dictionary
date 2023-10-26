@@ -4,6 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:dio_cache_interceptor/dio_cache_interceptor.dart';
 import 'package:free_english_dictionary/src/entities/entities.dart';
 
+/// FreeDictionaryService enables you to get meaning for words.
 class FreeDictionaryService {
   static final Dio _dio = Dio(
     BaseOptions(
@@ -26,6 +27,7 @@ class FreeDictionaryService {
     return _instance!;
   }
 
+  /// Static method for requesting for word meanings.
   static Future<List<WordMeaning>> getWordMeaning(String word) async {
     final meaningList = <WordMeaning>[];
     if (word.isEmpty) {
